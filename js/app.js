@@ -1,5 +1,6 @@
 var data;
 axios.get("https://covid19.mathdro.id/api/").then(response => {
+  data = response.data
   document.querySelector('#global-confirmed').innerHTML = data.confirmed.value;
   document.querySelector('#global-death').innerHTML = data.deaths.value;
   document.querySelector('#global-recovered').innerHTML = data.recovered.value;
