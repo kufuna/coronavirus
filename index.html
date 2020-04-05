@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/inner.css">
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Covid-19</title>
+</head>
+<body class="">
+
+<img src="img/corona.png" alt="corona" id="corona-img">
+
+<div class="container">
+	<div class="statistic-wrapper">
+		<h2>გლობალურად</h2>
+		<div class="statistic-boxes">
+			<div class="statistic-box confirmed">
+				<h3>ინფიცირებული</h3>
+				<h4 id="global-confirmed">0</h4>
+			</div>
+			<div class="statistic-box death">
+				<h3>გარდაცვლილი</h3>
+				<h4 id="global-death">0</h4>
+			</div>
+			<div class="statistic-box recovered">
+				<h3>გამოჯანმრთელებული</h3>
+				<h4 id="global-recovered">0</h4>
+			</div>
+		</div>
+	</div>
+	<div class="statistic-wrapper">
+		<h2>საქართველოში</h2>
+		<div class="statistic-boxes">
+			<div class="statistic-box confirmed">
+				<h3>ინფიცირებული</h3>
+				<h4 id="goergia-confirmed">0</h4>
+			</div>
+			<div class="statistic-box death">
+				<h3>გარდაცვლილი</h3>
+				<h4 id="georgia-death">0</h4>
+			</div>
+			<div class="statistic-box recovered">
+				<h3>გამოჯანმრთელებული</h3>
+				<h4 id="georgia-recovered">0</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

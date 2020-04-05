@@ -1,0 +1,91 @@
+/* start of first slide */
+
+#main-slider-container .slider-item.triple-slider .slide-body .items {
+	/*transform-origin: right;*/
+	/*transform: scaleX(1) translateZ(1px);*/
+	-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	transition:  cubic-bezier(0.3, 0.01, 0.18, 1) .6s;
+}
+#main-slider-container.next-1 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+#main-slider-container.next-1.left-active .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	transition: 1s;
+}
+
+
+#main-slider-container.next-2 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+#main-slider-container.next-2 .slider-item.triple-slider .slide-body .items:nth-child(1) {
+	transition-delay: 1.2s;
+}
+#main-slider-container.next-2 .slider-item.triple-slider .slide-body .items:nth-child(2) {
+	transition-delay: 1s;
+}
+#main-slider-container.next-2 .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	transition-delay: 0.5s;
+}
+
+
+
+#main-slider-container.next-3 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+#main-slider-container.next-3 .slider-item.triple-slider .slide-body .items:nth-child(1) {
+	transition-delay: 0s;
+}
+#main-slider-container.next-3 .slider-item.triple-slider .slide-body .items:nth-child(2) {
+	transition-delay: 0.1s;
+}
+#main-slider-container.next-3 .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	transition-delay: 0.2s;
+}
+
+
+
+#main-slider-container.prev-3 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+#main-slider-container.prev-2 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+#main-slider-container.prev-2 .slider-item.triple-slider .slide-body .items:nth-child(1) {
+	transition-delay: 0.5s;
+}
+#main-slider-container.prev-2 .slider-item.triple-slider .slide-body .items:nth-child(2) {
+	transition-delay: 1s;
+}
+#main-slider-container.prev-2 .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	transition-delay: 1.2s;
+}
+
+
+#main-slider-container.prev-1 .slider-item.triple-slider .slide-body .items {
+	-webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+#main-slider-container.prev-1 .slider-item.triple-slider .slide-body .items:nth-child(1) {
+	transition-delay: 0.2s;
+}
+#main-slider-container.prev-1 .slider-item.triple-slider .slide-body .items:nth-child(2) {
+	transition-delay: 0.1s;
+}
+#main-slider-container.prev-1 .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	transition-delay: 0s;
+}
+#main-slider-container.prev-1.left-active .slider-item.triple-slider .slide-body .items:nth-child(3) {
+	-webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+	transition: 1s;
+}
+
+/* end of first slide */
