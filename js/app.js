@@ -1,6 +1,7 @@
 var data;
 axios.get("https://covid19.mathdro.id/api/").then(response => {
   data = response.data
+  // console.log(data)
   document.querySelector('#global-confirmed').innerHTML = data.confirmed.value;
   document.querySelector('#global-death').innerHTML = data.deaths.value;
   document.querySelector('#global-recovered').innerHTML = data.recovered.value;
@@ -8,7 +9,20 @@ axios.get("https://covid19.mathdro.id/api/").then(response => {
 var georgia_data;
 axios.get("https://covid19.mathdro.id/api/countries/georgia").then(response => {
   georgia_data = response.data;
-  console.log(georgia_data)
+  document.querySelector('#goergia-confirmed').innerHTML = georgia_data.confirmed.value;
+  document.querySelector('#georgia-death').innerHTML = georgia_data.deaths.value;
+  document.querySelector('#georgia-recovered').innerHTML = georgia_data.recovered.value;
+});
+
+var x;
+var sum = 0;;
+axios.get("https://covid19.mathdro.id/api/daily/4-2-2020").then(response => {
+  x = response.data;
+  console.log(x)
+  for (var i = 0; i < x.length; i++) {
+  	sum = sum + Number(x[i].confirmed);
+  }
+  console.log(sum)
   document.querySelector('#goergia-confirmed').innerHTML = georgia_data.confirmed.value;
   document.querySelector('#georgia-death').innerHTML = georgia_data.deaths.value;
   document.querySelector('#georgia-recovered').innerHTML = georgia_data.recovered.value;
@@ -30,4 +44,7 @@ function count(elem,speed){
 	elem.innerHTML = number;
 	console.log(number)
 }
-// count(document.querySelector('#number'),120)
+
+window.onload = function(){
+	document.body.classList.add('loaded')
+}
