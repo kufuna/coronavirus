@@ -97,7 +97,7 @@ img#corona-img {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	transition: .5s 2s; 
+	transition: .5s 15s; 
 	opacity: 0;
 }
 #jager img {
@@ -112,7 +112,7 @@ img#corona-img {
 	opacity: 1;
 }
 .loaded #jager img {
-	animation: jager 100s linear both 2s;
+	animation: jager 100s linear both 15s;
 }
 @keyframes jager {
 	from {
